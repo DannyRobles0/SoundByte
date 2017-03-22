@@ -1,2 +1,21 @@
 # SoundByte
-MP3 player school project
+
+Instructions
+============
+- Runs in netbeans IDE with Derby Database
+- In netbeans, create a local database named Sound_Byte with no username or password
+- Run the SQL commands
+- Run SoundByte
+
+Features
+========
+- Supports multiple drag and drop
+- Supports playlists
+- Supports column ordering
+- Supports file searching
+- Supports IDv3 tags
+
+Contributors
+============
+- Danny Robles
+- Nick Sugimoto
