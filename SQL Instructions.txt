@@ -1,0 +1,54 @@
+Create table songs
+(
+    Title varchar(100) not null,
+    Artist varchar(100),
+    Album varchar(100),
+    Genre varchar(25),
+    Song_Length varchar(15),
+    File_Location varchar(400) not null,
+    constraint pk_songs primary key(File_Location)
+);
+
+Create table playlists 
+(
+    pName varchar(50) not null,
+    constraint pk_playlist primary key(pName)
+);
+
+Create table playlistSongs
+(
+    pName varchar(50) not null,
+    File_Location varchar(400) not null,
+    constraint pk_ps primary key(pName, File_Location),
+    constraint fk_playSongs foreign key(pName)
+        references playlists(pName),
+    constraint fk_libraryPS foreign key(File_Location)
+        references songs(File_Location)
+);
+
+alter table songs
+add column comment varchar(100);
+
+create table columns(
+cName varchar(15),
+showing boolean);
+
+insert into columns values('artist', true);
+insert into columns values('album', true);
+insert into columns values('genre', true);
+insert into columns values('length', true);
+insert into columns values('comment', true);
+
+create table recent(
+title varchar(100),
+file_location varchar(400),
+datetime timestamp,
+constraint pk_time primary key(datetime));
+
+create table sortOrder(
+sKey int,
+sColumn int,
+sOrder boolean,
+constraint pk_key primary key(skey));
+
+insert into sortOrder values(0,0,true);
