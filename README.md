@@ -6,6 +6,7 @@ Instructions
 - In netbeans, create a local database named Sound_Byte with no username or password
 - Run the SQL commands
 - Run SoundByte
+- Resolve problems with the included packages
 
 Features
 ========
