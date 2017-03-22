@@ -5,8 +5,7 @@ Instructions
 - Runs in netbeans IDE with Derby Database
 - In netbeans, create a local database named Sound_Byte with no username or password
 - Run the SQL commands
-- Run SoundByte
-- Resolve problems with the included packages
+- Run Project-Soundbyte/dist/Project-Soundbyte.jar
 
 Features
 ========
